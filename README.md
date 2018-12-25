@@ -44,13 +44,7 @@ Data Sources, API Usage & Technologies used:
 
 ❖	AWS Lambda function
 
-
-	API:
-
 ❖	Google Maps API
-
-
-	Implementation stack:
 
 ❖	React-native 
 
@@ -62,13 +56,15 @@ System Architecture:
  
 
 Workflow:
-❏	User Authentication: User has to authenticate to use the platform. The authentication will be done using AWS Cognito.
 
-❏	Data Collection: The locations of available parking spots will be crowdsourced, so the users who see an empty parking spot, they can report that to our app and can get some rewards. Initially, we are planning to get the dedicated people to report the parking locations and once, we get traction then the platform will become self sufficient. 
+User Authentication: User has to authenticate to use the platform. The authentication will be done using AWS Cognito.
 
-❏	Data processing: Since we are dividing the New York City maps into 2500 grids (100 latitude x 25 longitude) depending upon the range in which a geolocation coordinate falls, we are using Spark Streaming into EMR by collecting (lat,long) pairs generated from Kinesis to process this grid mapping real-time. These results will be stored in DynamoDB which will be refreshed every 30 seconds considering data points since the past 5 minutes
+Data Collection: The locations of available parking spots will be crowdsourced, so the users who see an empty parking spot, they can report that to our app and can get some rewards. Initially, we are planning to get the dedicated people to report the parking locations and once, we get traction then the platform will become self sufficient. 
 
-❏	Application Interface: Since the users might be driving while using our app, the interface has to be very easily understandable. We will be making a iOS application using react native which will be fetching data from DynamoDB and displaying it on our application interface
+Data processing: Since we are dividing the New York City maps into 2500 grids (100 latitude x 25 longitude) depending upon the range in which a geolocation coordinate falls, we are using Spark Streaming into EMR by collecting (lat,long) pairs generated from Kinesis to process this grid mapping real-time. These results will be stored in DynamoDB which will be refreshed every 30 seconds considering data points since the past 5 minutes
+
+Application Interface: Since the users might be driving while using our app, the interface has to be very easily understandable. We will be making a iOS application using react native which will be fetching data from DynamoDB and displaying it on our application interface.
+
 
 
 Important key considerations for our iOS Application:

@@ -53,6 +53,8 @@ Data Sources, API Usage & Technologies used:
 
 System Architecture:
 
+![alt text](https://github.com/rajdaiya/ParkSmart-ParkingLocator/blob/master/client/image.png)
+
  
 
 Workflow:

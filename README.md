@@ -1,7 +1,8 @@
 # Parking Locator Mobile Application - Cloud Computing 
-How to run?
-1. update the keys in aws-exports.js and google maps key in ios/ParkSmart/AppDelegate.m
-2. run the following commands
+
+How to run the react-native application?
+1. Update the keys in aws-exports.js and Google Maps key in ios/ParkSmart/AppDelegate.m
+2. Run the following commands
 ```
 npm install
 
